@@ -6,18 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://lsty.xyz">
-  <title>Archives: 2020 | 离世庭院</title>
+  <title>hexo博客css与js无法加载【没有解决】 | 离世庭院</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="人事远，天象近，两者不可及">
-<meta property="og:type" content="website">
-<meta property="og:title" content="离世庭院">
-<meta property="og:url" content="https:&#x2F;&#x2F;lsty.xyz&#x2F;archives&#x2F;2020&#x2F;index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="hexo博客css与js无法加载【没有解决】">
+<meta property="og:url" content="https:&#x2F;&#x2F;lsty.xyz&#x2F;article&#x2F;a9dd61d9.html">
 <meta property="og:site_name" content="离世庭院">
-<meta property="og:description" content="人事远，天象近，两者不可及">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;05&#x2F;16&#x2F;5cdc9aa77e1c878964.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;05&#x2F;16&#x2F;5cdc9ab809ec188536.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;05&#x2F;15&#x2F;5cdc2fdc52c6b86640.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;05&#x2F;15&#x2F;5cdc319072c9a19776.png">
+<meta property="article:published_time" content="2019-05-15T14:52:57.000Z">
+<meta property="article:modified_time" content="2020-08-05T10:14:25.036Z">
 <meta property="article:author" content="Eren">
-<meta property="article:tag" content="随笔，杂文，技术，编程，python">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;05&#x2F;16&#x2F;5cdc9aa77e1c878964.png">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -163,98 +168,292 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-hexo博客css与js无法加载【没有解决】】" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/article/7ff8898b.html" class="archive-article-date">
-  	<time datetime="2020-03-27T02:42:38.617Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/article/7ff8898b.html">up主该如何避免被“版权警察”围攻？</a>
+    <h1 class="article-title" itemprop="name">
+      hexo博客css与js无法加载【没有解决】
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/article/a9dd61d9.html" class="archive-article-date">
+  	<time datetime="2019-05-15T14:52:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://i.loli.net/2019/05/16/5cdc9aa77e1c878964.png" alt="早上一起来就遇到了这种问题"></p>
+<a id="more"></a>
+
+<p>作为一个小白当然只能谷歌啦，结果谷歌了一个早上也没有找到什么像样的结果，最后不得不将整个<code>blog</code>文件夹干掉重来，最终导致我整个下午都在重建自己的博客。其中酸爽，谁尝谁知道。</p>
+<p><img src="https://i.loli.net/2019/05/16/5cdc9ab809ec188536.png" alt="chorme上检查出来的错误"></p>
+<p>上图是chorme的报错，在今天之前我是完完全全不会看这玩意的，一个错误愣是让我稍微搞懂这满屏的英文都表明了啥。当然，这图是在本地localhost：4000上测试时报的错，不过就是因为在云端也是这个鬼样子所以我之后才没有<code>hexo d</code>而只是在本地测试。</p>
+<ol>
+<li><p>首先是第一条报警，MIMI类型不受支持。经过一通搜索，很自然的找到了<code>hexo</code>在GitHub上的项目，果不其然在issues里有人提过<a href="https://github.com/hexojs/hexo/issues/1121" target="_blank" rel="noopener">类似的问题</a>，然并卵；然后又是一条差不多的issues，不过对我依然没用<a href="https://github.com/hexojs/hexo/issues/2097" target="_blank" rel="noopener">hexo部分功能无法加载</a>。于是我就去找下一个报警了。</p>
+</li>
+<li><p>第二条是404警告，也就是网络问题。所以我就照着网上教的去这里↓<img src="https://i.loli.net/2019/05/15/5cdc2fdc52c6b86640.png" alt=""></p>
+<p>改URL和root，没用，再改回来【吐血】。</p>
+</li>
+<li><p>3和5一样，6和1一样，所以就剩下中间一个黄色的三角形警告。经过我的一通研究，发现这玩意是个插件，用来显示数学符号的【吐血】。在这里↓<img src="https://i.loli.net/2019/05/15/5cdc319072c9a19776.png" alt="数学公式插件"></p>
+</li>
+</ol>
+<p>这东西是我的主题<code>yilia</code>里的，我之前不知道为什么脑抽给它打开了，然后就出问题了。这个数学公式插件在不久前就停止服务了，但是主题里并没有删除，人家都停止服务了，你当然怎么都链接不上人家啦。</p>
+<hr>
+<h2 id="最终，在下午一点钟的时候我觉得推翻重来。"><a href="#最终，在下午一点钟的时候我觉得推翻重来。" class="headerlink" title="最终，在下午一点钟的时候我觉得推翻重来。"></a>最终，在下午一点钟的时候我觉得推翻重来。</h2><p>重来期间也遇到过一些小问题，但最终都解决了，反正比第一次搭建博客的时候要快很多。在最后的时候我决定给我的博客换一个评论插件，因为我觉得我原来用的<code>gitment</code>很丑，而<code>gitalk</code>就美观很多了。</p>
+<p>但这才是一切悲剧的开端。</p>
+<p><strong>未找到相关的issues进行评论</strong>这个问题让我无解，我都快把所有与之相关的词条、博客、issues都看过一遍了，但是无解【吐血】。</p>
+<p>今天太晚了，舍友都睡了，不适合一个人在这里敲键盘，明天再补一篇。</p>
+<hr>
+<p>2019-05-15 23:43于宿舍写完。</p>
+
+      
+
+<!-- 《添加版权声明 -->
+
+  <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare">
+    <strong class="author">本文作者：</strong>
+    
+      Eren
+    
+    <br>
+    <strong class="create-time">发布时间：</strong>
+    2019-05-15
+    <br>
+    <strong class="update-time">最后更新：</strong>
+    2020-08-05
+    <br>
+    <strong class="article-titles">本文标题：</strong>
+    <a href="https://lsty.xyz/article/a9dd61d9.html" title="hexo博客css与js无法加载【没有解决】" target="_blank">hexo博客css与js无法加载【没有解决】</a>
+    <br>
+    <strong class="article-url">本文链接：</strong>
+    <a href="https://lsty.xyz/article/a9dd61d9.html" title="hexo博客css与js无法加载【没有解决】" target="_blank">https://lsty.xyz/article/a9dd61d9.html</a>
+    <br>
+    <strong class="copyright">版权声明：</strong>
+    本作品采用
+    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议">CC BY-NC-SA 4.0</a>
+    许可协议进行许可。转载请注明出处！
+    
+      <br>
+      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+    
+  </div>
+
+<!-- 添加版权声明》 -->
+
+<!-- 添加版权声明》 -->
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝咖啡<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+
+    
+      <span id="busuanzi_container_page_pv">
+        (●阅读量 <span id="busuanzi_value_page_pv"></span> 次●)
+      </span>
+    
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂文</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://lsty.xyz/article/a9dd61d9.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/article/4f781f70.html" class="archive-article-date">
-  	<time datetime="2020-01-20T15:29:42.312Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-20</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/article/8318ed41.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          python学习001天
+        
+      </div>
+    </a>
+  
+  
+    <a href="/article/88edabe0.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">一些有意思的话题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/article/4f781f70.html">论醉酒者</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂文</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#最终，在下午一点钟的时候我觉得推翻重来。"><span class="toc-number">1.</span> <span class="toc-text">最终，在下午一点钟的时候我觉得推翻重来。</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
   
   
-    </div></section>
+  
+  
+  
+    <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'OeAv5wYenHgvA18WyPF2xCsR-gzGzoHsz',
+      app_key: 'Cn7LlGmNMvKQzxoOcli5pSuw',
+      placeholder: '有话要说？'
+    });
+</script>
+
+  
+ 
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -284,8 +483,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

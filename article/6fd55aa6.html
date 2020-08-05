@@ -6,18 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://lsty.xyz">
-  <title>Archives: 2020 | 离世庭院</title>
+  <title>macOS 装pip3遇到的各种鬼问题 | 离世庭院</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="人事远，天象近，两者不可及">
-<meta property="og:type" content="website">
-<meta property="og:title" content="离世庭院">
-<meta property="og:url" content="https:&#x2F;&#x2F;lsty.xyz&#x2F;archives&#x2F;2020&#x2F;index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="macOS 装pip3遇到的各种鬼问题">
+<meta property="og:url" content="https:&#x2F;&#x2F;lsty.xyz&#x2F;article&#x2F;6fd55aa6.html">
 <meta property="og:site_name" content="离世庭院">
-<meta property="og:description" content="人事远，天象近，两者不可及">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;006y8mN6gy1g7ebjo85utj31c00u0wj7.jpg">
+<meta property="article:published_time" content="2019-06-07T02:02:35.879Z">
+<meta property="article:modified_time" content="2020-08-05T10:14:25.040Z">
 <meta property="article:author" content="Eren">
-<meta property="article:tag" content="随笔，杂文，技术，编程，python">
+<meta property="article:tag" content="python基础">
+<meta property="article:tag" content="Mac系统">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;006y8mN6gy1g7ebjo85utj31c00u0wj7.jpg">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -163,98 +166,303 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-mac装pip3遇到的问题|未完全解决" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/article/7ff8898b.html" class="archive-article-date">
-  	<time datetime="2020-03-27T02:42:38.617Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/article/7ff8898b.html">up主该如何避免被“版权警察”围攻？</a>
+    <h1 class="article-title" itemprop="name">
+      macOS 装pip3遇到的各种鬼问题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/article/6fd55aa6.html" class="archive-article-date">
+  	<time datetime="2019-06-07T02:02:35.879Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7ebjo85utj31c00u0wj7.jpg" alt="【暗黑3】06"></p>
+<a id="more"></a>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前两天脑袋一热就把自己<strong>Mac</strong>上的<strong>windows</strong>系统给卸载了。当时似乎理由挺充分的，现在却什么都想不起来了，除了各种还不适应的坑。</p>
+<p>后来仔细想想，当时促使我把那个<strong>windows</strong>系统给卸载的原因应该是当初给我装双系统的那个不知道是几舅的舅舅给<strong>win</strong>划磁盘空间的时候划的实在太大，原本<em>250G</em>的磁盘，有<em>200G</em>都给<strong>win</strong>了，搞得我想用<strong>macOS</strong>的时候什么东西都装不了，所以我就把它给卸载了。（<del>我还曾经一度以为自己是个假果粉，就是那种在知乎各种发帖批判用Mac装win这种行为不好的人</del>）</p>
+<h1 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h1><blockquote>
+<p>原本我就在学<code>python</code>，所以换了系统第一件事就是跑到<code>python</code>官网把<code>python3.7</code>给装上了，然后又去隔壁装了一下<code>git</code>打算把我的<code>hexo</code>博客迁过来，于是问题就出现了。</p>
+</blockquote>
+<p>用<strong>macOS</strong>的都知道，<strong>macOS</strong>是自带<code>python2.7</code>的。这玩意儿搁以前肯定是好的，毕竟不用我们再装了。但现在<code>python3.7</code>都出来好一阵了，而<strong>macOS</strong>原装的<code>python2.7</code>又不好卸载，谁知道它有没有什么内置软件之类的需要<code>python2.7</code>支持呢？于是对于用<strong>macOS</strong>系统的孩子来说，怎么处理系统上两个版本的<code>python</code>就成了问题，而我的问题就是这两个版本的<code>python</code>带来的。</p>
+<p>重新部署<code>hexo</code>需要<code>pip3</code>，但是我照着教程装<code>pip3</code>的时候总会把<code>pip3</code>给装到<code>python2.7</code>的目录下面，这不是等于没装吗？</p>
+<p><a href="https://www.jianshu.com/p/3701ff3399dd" target="_blank" rel="noopener">没用的教程</a></p>
+<p>只能在百度上各种搜索，照着官方的操作步骤试了一遍又一遍，每次都是一样的问题。</p>
+<p><a href="https://pip.pypa.io/en/latest/installing/#id7" target="_blank" rel="noopener">官方</a></p>
+<p>最终功夫不负有心人，终于让我找到了可以换安装文件夹的教程。（如下）</p>
+<p> <a href="https://www.cnblogs.com/ace722/p/9697331.html" target="_blank" rel="noopener">有用的|Python自学，番外篇之三 Mac的pip3的安装</a></p>
+<p>照着教程弄好之后，试验了一下，发现<code>pip</code>终于成功的装到<code>python3.7</code>的安装目录下面了，真是可喜可贺，可喜可贺！</p>
+<p>这个问题已经困扰我一天了！！</p>
+<p>然鹅还没等我高兴多久，等我关了<code>terminal</code>再次打开时又发现了问题。</p>
+<blockquote>
+<p>可能以后每次要用到pip3都需要重新</p>
+<p> <code>source py3env/bin/activate</code>一下</p>
+</blockquote>
+<p>这就是问题啊！用一个<code>pip3</code>难道就这么麻烦吗？就像要让<code>python=python3.7</code>还有每次重新运行一下这个命令：</p>
+<p><code>source ~/.bash_profile</code></p>
+<p>这难道不麻烦吗？难道就不能像解决下面这个问题一样解决上面的问题吗？</p>
+<p><code>还没成功，以后再战</code></p>
+<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>怀着这样的情绪我把自己从官网下载的<code>python3.7</code>给卸载了，因为我实在不知道该怎么调教了。照着百度经验将原来的<code>python3.7</code>完全卸载之后，我决定按照之前从其他教程那里看来的，用<code>homebrew</code>来装，因为这样装的<code>python3.7</code>自带<code>pip3</code>。</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>装<code>homebrew</code></p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p><code>brew install python3</code></p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>再调教一下 <code>.bash_profle</code>文件，于是问题就解决了，<code>pip3</code>成功安装。</p>
+
+      
+
+<!-- 《添加版权声明 -->
+
+  <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare">
+    <strong class="author">本文作者：</strong>
+    
+      Eren
+    
+    <br>
+    <strong class="create-time">发布时间：</strong>
+    2019-06-07
+    <br>
+    <strong class="update-time">最后更新：</strong>
+    2020-08-05
+    <br>
+    <strong class="article-titles">本文标题：</strong>
+    <a href="https://lsty.xyz/article/6fd55aa6.html" title="macOS 装pip3遇到的各种鬼问题" target="_blank">macOS 装pip3遇到的各种鬼问题</a>
+    <br>
+    <strong class="article-url">本文链接：</strong>
+    <a href="https://lsty.xyz/article/6fd55aa6.html" title="macOS 装pip3遇到的各种鬼问题" target="_blank">https://lsty.xyz/article/6fd55aa6.html</a>
+    <br>
+    <strong class="copyright">版权声明：</strong>
+    本作品采用
+    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议">CC BY-NC-SA 4.0</a>
+    许可协议进行许可。转载请注明出处！
+    
+      <br>
+      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+    
+  </div>
+
+<!-- 添加版权声明》 -->
+
+<!-- 添加版权声明》 -->
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝咖啡<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+
+    
+      <span id="busuanzi_container_page_pv">
+        (●阅读量 <span id="busuanzi_value_page_pv"></span> 次●)
+      </span>
+    
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂文</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">python基础</a>
         		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/article/4f781f70.html" class="archive-article-date">
-  	<time datetime="2020-01-20T15:29:42.312Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/article/4f781f70.html">论醉酒者</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
+      		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂文</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Mac系统</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://lsty.xyz/article/6fd55aa6.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/article/2799c74a.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          macos chorme浏览器首页被搜狗/2345/hao123劫持怎么办？
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/article/91ad42af.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python学习002天</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#遇到问题"><span class="toc-number">2.</span> <span class="toc-text">遇到问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决"><span class="toc-number">3.</span> <span class="toc-text">解决</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1"><span class="toc-number">3.1.</span> <span class="toc-text">1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2"><span class="toc-number">3.2.</span> <span class="toc-text">2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-number">3.3.</span> <span class="toc-text">3</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+  
+  
+  
+  
+  
+    <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'OeAv5wYenHgvA18WyPF2xCsR-gzGzoHsz',
+      app_key: 'Cn7LlGmNMvKQzxoOcli5pSuw',
+      placeholder: '有话要说？'
+    });
+</script>
+
+  
+ 
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -284,8 +492,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
