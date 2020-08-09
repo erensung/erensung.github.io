@@ -113,6 +113,52 @@ var _hmt = _hmt || [];
 					<a class="mail" target="_blank" href="mailto:erensung@outlook.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
+			<!-- 《左侧边栏添加--APlayer音乐播放器 -->
+			
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+				<!-- // 这里div的样式是笔者自己修改过的，你可以直接使用APlayer官方的原配置：<div id="aplayer"></div> -->
+				<div id="aplayer" style="position:absolute;left;0;bottom:0;"></div>
+				<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+				<script>
+					const ap = new APlayer({
+						container: document.getElementById('aplayer'),
+						autoplay: false,
+						listFolded: true,
+						listMaxHeight: 90,
+						order: 'list',
+						loop: 'all',
+						theme: '#b7daff',
+						preload: 'none',
+						mutex: true,
+						lrcType: 3,
+						volume: 0.7,
+						fixed: false,
+						audio: [{
+								name: '国际歌',
+								artist: '唐朝乐队',
+								lrc: '/themes/yilia/source/music/bbb.lrc',
+								cover: '/themes/yilia/source/img/cover.jpg',
+								url: '/themes/yilia/source/music/aaa.mp3',
+						]
+					});
+				
+					<!-- 根据封面自适应主题色 -->
+					const colorThief = new ColorThief();
+					const setTheme = (index) => {
+						if (!ap.list.audios[index].theme) {
+							colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
+								ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+							});
+						}
+					};
+					setTheme(ap.list.index);
+					ap.on('listswitch', (data) => {
+						setTheme(data.index);
+					});
+				</script>
+				
+				<!-- 左侧边栏添加--APlayer音乐播放器》 -->
 		</nav>
 	</header>		
 </div>
@@ -407,19 +453,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">各种问题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Mac</a>
+                <a href="javascript:void(0)" class="js-tag color5">各种问题</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">杂文</a>
+                <a href="javascript:void(0)" class="js-tag color4">Mac</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -428,6 +470,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">好物推荐</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">杂文</a>
               </li>
              
               <li class="article-tag-list-item">
