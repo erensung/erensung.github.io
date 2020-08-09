@@ -3501,7 +3501,8 @@ pre .id {
   }
 
   #mobile-nav #header {
-    padding: 10px 0 0
+    padding: 10px 0px 1px;
+    background: #eaeaea;
   }
 
   #mobile-nav #header .profilepic {
