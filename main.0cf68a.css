@@ -878,7 +878,8 @@ textarea {
 
 body {
   overflow-y: hidden;
-  background: #9ac5f2
+  background: #9ac5f2;
+  /* background: #f1fafa; */
   /* background: url(./img/background.png) no-repeat 0% 0%/ cover; */
 }
 
@@ -2192,8 +2193,11 @@ pre .id {
   border: 1px solid #ddd;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  background: #E8E8FF;
-  /* background: #fff */
+  /* background: #E8E8FF; */     /*紫色*/
+  /* background: #f1fafa; */     /*绿色*/
+  background: #fbfbea;         /*米色*/
+  /* background: #fff9db; */     /*yellow 0*/
+  /* background: #ffffff */      /*white*/
   transition: all .2s ease-in
 }
 
